@@ -1,18 +1,19 @@
-class Solution:
-    def fizzBuzz(self, n: int) -> List[str]:
-        m=[]
-        b=1
-        while(b<=n):
-            if((b)%15==0):
-                m.append("FizzBuzz")
-            elif((b)%3==0):
-                m.append("Fizz")
-            elif((b)%5==0):
-                m.append("Buzz")
+class Solution(object):
+    def fizzBuzz(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        
+        """
+        List=[]
+        for i in range(1,n+1,+1):
+            
+            if(i%3==0 and i%5==0):
+                List.append("FizzBuzz") 
+            elif(i%3==0):
+                List.append("Fizz")
+            elif(i%5==0):
+                List.append("Buzz")
             else:
-                b=str(b)
-                m.append(b)
-            b=int(b)
-            b+=1
-        return m
-        return Solution.m
+                List.append(str(i))
+        return List
