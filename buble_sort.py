@@ -4,13 +4,9 @@ import random
 import re
 import sys
 
-#
-# Complete the 'countSwaps' function below.
-#
-# The function accepts INTEGER_ARRAY a as parameter.
-#
 
-def countSwaps(a):
+
+def countSwaps(a) :
     c=0
     for i in range(len(a)):
         for y in range(len(a)-1):
