@@ -20,7 +20,7 @@ def countSwaps(a):
     print(f"Array is sorted in {c} swaps.")
     print(f"First Element: {a[0]}\nLast Element: {a[len(a)-1]}")
 
-if __name__ == '__main__':
+if __name__  ==  '__main__':
     n = int(input().strip())
 
     a = list(map(int, input().rstrip().split()))
